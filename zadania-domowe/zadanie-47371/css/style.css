@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.container {
+    width: 60vw;
+    height: min-content;
+    background-color: #bdcebe; 
+    border-radius: 25px;
+    margin: 15px;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+h2 {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+.customer-info {
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.books {
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.first-input {
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 8px;
+    width: 30vw;
+    border: none;
+    border-radius: 6px;
+}
+.second-input {
+    box-sizing: border-box;
+    width: 30vw;
+    padding: 8px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+#quantity {
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 10px;
+    width: 8vw;
+    border: none;
+    border-radius: 6px;
+}
+
+#submit {
+    width:fit-content;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 14px 8px 14px;
+    margin-left: 22px;
+    margin-top: 15px;
+    border: none;
+    border-color: grey;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.4s;
+}
+
+#submit:hover {
+    background-color: black;
+    box-shadow: none;
+    color: azure;
+    font-weight: lighter;
+}
+

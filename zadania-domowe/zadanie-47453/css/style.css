@@ -1,0 +1,88 @@
+
+
+.wrapper {
+    background-color: darkgray;
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    position: absolute;
+    background-color: rgba(255, 99, 71, 0.5);
+    width: 660px;
+    line-height: 2em;
+    text-align: center;
+    opacity: 0;
+}
+
+h3:hover {
+    opacity: 1;
+}
+
+h3::before,
+h3::after,
+span::before,
+span::after {
+    transition: 1s;
+}
+
+
+h3::before {
+    content: "";
+    border-top:  3px solid black;
+    border-left: 3px solid black;
+    position: absolute;
+    top: -161px;
+    left: 0px;
+    width: 330px;
+    height: 10px;
+}
+
+h3::after {
+    content: "";
+    border-top:  3px solid black;
+    border-right: 3px solid black;
+    position: absolute;
+    top: -161px;
+    right: 0px;
+    width: 330px;
+    height: 10px;
+}
+
+
+span::before {
+    content: "";
+    border-bottom:  3px solid black;
+    border-left: 3px solid black;
+    position: absolute;
+    bottom: -161px;
+    left: 0px;
+    width: 330px;
+    height: 10px;
+}
+
+span::after {
+    content: "";
+    border-bottom:  3px solid black;
+    border-right: 3px solid black;
+    position: absolute;
+    bottom: -161px;
+    right: 0px;
+    width: 330px;
+    height: 10px;
+}
+
+h3:hover::before,
+h3:hover::after,
+span:hover::before,
+span:hover::after { 
+    
+    height: 150px; 
+}
+
+

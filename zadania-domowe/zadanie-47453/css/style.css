@@ -3,8 +3,6 @@
     background-color: darkgray;
     width: 100vw;
     height: 100vh;
-    margin: auto;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +16,10 @@
     width: 650px;
     height: 350px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: 1s;
-    opacity: 1;
+    opacity: 0;
     
 }
 
@@ -33,22 +30,8 @@ h3 {
     width: 660px;
     text-align: center;
     text-transform: uppercase;
+    transition: all 1s;
     
-}
-
-.for-frame::before,
-.for-frame::after
-span::before,
-span::after 
-{
-    content: "";
-    position: absolute;
-    width: 51% ;
-    height: 10%;
-    transition: 1s;
-    opacity: 1;
-    
-
 }
 
 .for-frame::before {
@@ -57,7 +40,6 @@ span::after
     top: -5px;
     left: -5px;
 }
-
 
 .for-frame::after {
     border-top:  3px solid black;
@@ -80,19 +62,29 @@ span::after {
     right: -5px;
 }
 
+.for-frame::before,
+.for-frame::after,
+span::before,
+span::after {
+    position: absolute;
+    content: "";
+    line-height: 350px;
+    width: 51%;
+    height: 20%;
+    transition: 1s;
+}
 
 .for-frame:hover {
     opacity: 1;
-    height: 51%;
-
 }
-
-
 
 .for-frame:hover::before,
 .for-frame:hover::after,
 span:hover::before,
 span:hover::after {
-    opacity: 1;
     height: 51%;
+}
+
+.for-frame:hover h3{
+    font-size: 3em;
 }

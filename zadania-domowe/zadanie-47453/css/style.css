@@ -1,9 +1,8 @@
-
-
 .wrapper {
+    position: absolute;
     background-color: darkgray;
-    width: 80vw;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
     position: relative;
     display: flex;
@@ -11,78 +10,89 @@
     align-items: center;
 }
 
-h3 {
+
+
+.for-frame {
     position: absolute;
-    background-color: rgba(255, 99, 71, 0.5);
-    width: 660px;
-    line-height: 2em;
-    text-align: center;
-    opacity: 0;
-}
-
-h3:hover {
-    opacity: 1;
-}
-
-h3::before,
-h3::after,
-span::before,
-span::after {
+    background-color: transparent;
+    width: 650px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: 1s;
+    opacity: 1;
+    
 }
 
+h3 {
+    background-color: rgba(255, 99, 71, 0.6);
+    line-height: 2em;
+    position: absolute;
+    width: 660px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
 
-h3::before {
+.for-frame::before,
+.for-frame::after
+span::before,
+span::after 
+{
     content: "";
+    position: absolute;
+    width: 51% ;
+    height: 10%;
+    transition: 1s;
+    opacity: 1;
+    
+
+}
+
+.for-frame::before {
     border-top:  3px solid black;
     border-left: 3px solid black;
-    position: absolute;
-    top: -161px;
-    left: 0px;
-    width: 330px;
-    height: 10px;
+    top: -5px;
+    left: -5px;
 }
 
-h3::after {
-    content: "";
+
+.for-frame::after {
     border-top:  3px solid black;
     border-right: 3px solid black;
-    position: absolute;
-    top: -161px;
-    right: 0px;
-    width: 330px;
-    height: 10px;
+    top: -5px;
+    right: -5px;
 }
-
 
 span::before {
-    content: "";
     border-bottom:  3px solid black;
     border-left: 3px solid black;
-    position: absolute;
-    bottom: -161px;
-    left: 0px;
-    width: 330px;
-    height: 10px;
+    bottom: -5px;
+    left: -5px;
 }
 
 span::after {
-    content: "";
     border-bottom:  3px solid black;
     border-right: 3px solid black;
-    position: absolute;
-    bottom: -161px;
-    right: 0px;
-    width: 330px;
-    height: 10px;
+    bottom: -5px;
+    right: -5px;
 }
 
-h3:hover::before,
-h3:hover::after,
+
+.for-frame:hover {
+    opacity: 1;
+    height: 51%;
+
+}
+
+
+
+.for-frame:hover::before,
+.for-frame:hover::after,
 span:hover::before,
-span:hover::after { 
-    
-    height: 150px; 
+span:hover::after {
+    opacity: 1;
+    height: 51%;
 }
-
-

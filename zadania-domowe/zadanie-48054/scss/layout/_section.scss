@@ -1,0 +1,18 @@
+.main-section {
+    background-color: lightgray;
+
+    @include section-padding;
+
+    .post {
+        background-color: lightgreen;
+
+        p {
+            font-weight: bold;
+
+            &.first-paragraph {
+                color: red;
+            }  
+
+        }
+    }
+}

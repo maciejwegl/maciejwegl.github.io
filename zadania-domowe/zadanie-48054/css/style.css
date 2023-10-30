@@ -1,0 +1,35 @@
+p {
+  color: orange;
+  font-size: 20px;
+}
+
+a {
+  color: orange;
+}
+a:hover {
+  color: blue;
+}
+
+header {
+  text-align: center;
+}
+header p {
+  color: green;
+}
+
+.main-section {
+  background-color: lightgray;
+}
+.main-section .post {
+  background-color: lightgreen;
+}
+.main-section .post p {
+  font-weight: bold;
+}
+.main-section .post p.first-paragraph {
+  color: red;
+}
+
+.site-footer {
+  padding: 60px 0;
+}/*# sourceMappingURL=style.css.map */

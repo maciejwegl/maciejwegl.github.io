@@ -1,0 +1,36 @@
+
+::after, ::before {
+    display: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+    
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+.orange {
+    color: orange !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+.accordion-button {
+    color:darkorange;
+};
+
+.accordion-button:not(.collapsed) {
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}  
+
+.accordion-button:focus {
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}  

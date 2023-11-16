@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    font-family: $font-secondary;
+    color: $color-secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-secondary;
+    color: $color-secondary;
+}
+
+h2 {
+    font-size: $base-font-size + 26px;
+}
+
+h3 {
+    font-size: $base-font-size + 6px;
+}
+
+p {
+    font-family: $font-primary;
+    font-size: $base-font-size;
+}
+
+a {
+    transition: all 0.3s;
+}
+section {
+    padding: 30px 0;
+}
+
+
+
+.container {
+    max-width: $s-container;
+    width: $s-container;
+    padding: 0 23px;
+    margin: 0 auto;
+}
+
+.header-section {
+    @include flexbox;
+    @include justify-align(center, center);
+    
+    .section-header-content {
+        max-width: 850px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 300;
+        color: $text-color-primary;
+        font-size: $base-font-size;
+        padding-bottom: 80px;
+
+    }
+
+    @media all and (min-width: $medium) {
+        .section-header-content {
+            max-width: 75%;
+        }
+    }
+
+
+}
+
+
+
+@media all and (min-width: $large) {
+    .container {
+        max-width: $l-container;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
+
+@media all and (min-width: $extra-large) {
+    .container {
+        max-width: $xl-container;
+    }
+}
+

@@ -1,0 +1,121 @@
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #fff;
+    z-index: 9999;
+
+    .main-nav-holder {
+        @include flexbox;
+        justify-content: space-between;
+
+    }
+
+    %mobile-controls {
+        font-size: 28px;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        @extend %mobile-controls;
+        color: $color-primary;
+    }
+
+    .menu-close {
+        @extend %mobile-controls;
+        color: $text-color-white;
+    }
+
+
+    .menu-open {
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: $color-primary;
+        text-align: right;
+        max-width: 480px;
+        width: 480px;
+        padding: 21px 28px;
+        display: none;
+
+        &.open {
+            display: block;
+        }
+
+
+
+        ul {
+            list-style: none;
+            padding: 50px 28px 44px 0;
+            
+            
+            li {
+                text-transform: uppercase;
+                font-size: 50px;
+                line-height: 115px;
+                
+
+                a {
+                    text-decoration: none;
+                    color: $text-color-white;
+                    font-family: $font-primary;
+                }  
+            }
+              
+        }
+
+    }
+
+
+    .brand-link {
+        display: inline-block;
+        height: 50px;
+
+        img {
+            height: 100%;
+        }
+
+    }
+
+
+    @media all and (min-width: $large) {
+
+        %mobile-controls {
+            display: none;
+        }
+
+    
+        .main-nav-holder {
+            justify-content: flex-start;
+
+            .brand-link {
+                height: 80px;
+            }
+        }
+
+        .menu-open {
+            display: block;
+            background-color: transparent;
+            width: auto;
+            max-width: 100%;
+            padding: 0; 
+            position: static;
+            
+            .menu {
+                
+                @include menu;
+            }
+            
+        }
+    }
+
+
+}
+
+
+
+

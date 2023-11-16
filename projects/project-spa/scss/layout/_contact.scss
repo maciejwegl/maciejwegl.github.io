@@ -1,0 +1,73 @@
+#contact {
+    background-color: $color-primary;
+    color: $text-color-white;
+
+    .header-section h2 {
+        color: $text-color-white;
+    }
+
+    .section-header-content {
+        max-width: 80%;
+        color: $text-color-white;
+        padding-bottom: 60px;
+    }
+
+    .contact-info {
+        @include flexbox;
+            
+
+        .contact-item {
+            width: 100%;
+            padding: 20px 0;
+            @include flexbox;
+            justify-content: center;
+            // align-items: center;
+            text-transform: uppercase;
+
+            .contact-icon {
+                width: 15%;
+                height: 100%;
+                margin-right: 30px;
+                background-size:contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+
+            .contact-details {
+                text-align: left;
+            }
+
+            .contact-details a {
+                text-decoration: none;
+                color: $text-color-white;
+            }
+
+        }
+
+        @media all and (min-width: $medium) {
+            .contact-item {
+                justify-content: flex-start;
+                
+            }
+            
+        }
+    
+    }
+
+    .contact-form {
+        input,
+        textarea {
+            margin: 10px 0;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            margin: 20px 0;
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+
+input,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+    background-color: $color-primary;
+    color: $text-color-white;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255, 0.6);
+    font-family: $font-primary;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    &::placeholder {
+        color: $text-color-white;
+        
+    }
+
+    &.error {
+        border-bottom: 1px solid red;
+    }
+
+
+}
+
+
+
+    
+
+    

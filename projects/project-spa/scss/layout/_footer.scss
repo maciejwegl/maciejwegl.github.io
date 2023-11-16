@@ -1,0 +1,38 @@
+.main-footer {
+    padding: 60px 0;
+
+    .container {
+        @include flexbox;
+        @include justify-align(center, center);
+
+        img {
+            width: 100px;
+        }    
+    
+
+        .footer-menu {
+
+            display: block;
+            background-color: transparent;
+            width: auto;
+            width: 100%;
+            padding: 50px 0;
+
+
+
+            .menu {
+                @include menu; 
+                text-align: center;
+                text-transform: uppercase;
+
+                .menu-item {
+                    margin: 0 15px;
+                }
+
+            }    
+        }
+
+
+    }
+}
+    

@@ -1,0 +1,20 @@
+#blog {
+
+    .blog-meta {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
+        text-transform: uppercase;
+
+        a {
+            text-decoration: none;
+            color: $text-color-primary;
+            font-weight: 300;
+            margin: 0 5px;
+        }
+    }
+
+
+
+}

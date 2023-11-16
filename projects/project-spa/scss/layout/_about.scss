@@ -1,0 +1,41 @@
+
+#about {
+    width: 100%;
+
+    .header-about {
+        display: flex;
+        flex-direction: column;
+        @include justify-align(center, center);
+
+        .logo-about {
+            max-width: 20%;
+        }
+
+        .about-description {
+            display: inline-block;
+            font-size: $base-font-size;
+            padding-top: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-secondary;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .about-header-content {
+            max-width: 850px;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+            color: $text-color-primary;
+            padding-bottom: 35px;
+        }
+
+        
+
+    }
+
+
+}

@@ -190,15 +190,18 @@
         <div class="appointment-box">
             <div class="appointment-bg-img" style="background-image: url(img/contact-bg.jpg);"></div>
             <form id="appointment-form" action="">
-                <input type="text" name="name" placeholder="Name" id="appointment-name" class="form-field">
-                <input type="email" name="email" placeholder="Email" id="appointment-email" class="form-field">
+                <ul id="appointment-errors">
+                    
+                </ul>
+                <input type="text" name="name" placeholder="Name" id="appointment-name" class="form-field" autocomplete="on">
+                <input type="email" name="email" placeholder="Email" id="appointment-email" class="form-field" autocomplete="on">
                 <select name="service" id="appointment-service" class="form-field">
                     <option value="">Select service</option>
                     <option value="normal">Normal service</option>
                     <option value="vip">VIP Service</option>
                 </select>
 
-                <input type="tel" name="phone" placeholder="Phone" id="appointment-phone" class="form-field">
+                <input type="tel" name="phone" placeholder="Phone" id="appointment-phone" class="form-field" autocomplete="on">
                 <input type="date" name="date" id="appointment-date" class="form-field">
                 <input type="time" name="time" id="appointment-time" class="form-field">
                 <textarea name="message" id="form-message" placeholder="Your notes" cols="30" rows="1"></textarea>

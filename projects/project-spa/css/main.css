@@ -262,6 +262,7 @@ h2 {
 
 h3 {
   font-size: 22px;
+  height: 26px;
 }
 
 p {
@@ -789,7 +790,7 @@ select.error {
   justify-content: space-between;
   width: 100%;
   background-color: #1ba4ce;
-  padding: 80px 40px;
+  padding: 60px 40px;
 }
 .appointment-box form input,
 .appointment-box form select {
@@ -797,6 +798,24 @@ select.error {
 }
 .appointment-box form textarea {
   margin-bottom: 40px;
+}
+.appointment-box form #appointment-errors {
+  display: none;
+  width: 100%;
+  margin-bottom: 30px;
+  color: red;
+  font-family: "Roboto", sans-serif;
+}
+.appointment-box form #appointment-errors li {
+  list-style: none;
+}
+.appointment-box form #appointment-errors.error {
+  display: inline-block;
+}
+.appointment-box form #appointment-errors.sent {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 21px;
 }
 @media all and (min-width: 992px) {
   .appointment-box form {
@@ -919,5 +938,8 @@ select.error {
   text-decoration: none;
 }
 .main-footer .container .footer-menu .menu .menu-item {
-  margin: 0 15px;
+  margin: 10px 10px;
+}
+.main-footer .container .copywright {
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

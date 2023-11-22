@@ -13,7 +13,7 @@
         justify-content: space-between;
         width: 100%;
         background-color: $color-primary;
-        padding: 80px 40px;
+        padding: 60px 40px;
         
         input,
         select {
@@ -22,6 +22,28 @@
 
         textarea {
             margin-bottom: 40px;
+        }
+
+        #appointment-errors {
+            display: none;
+            width: 100%;
+            margin-bottom: 30px;
+            color: red;
+            font-family: $font-primary;
+
+            li {
+                list-style: none;
+            }
+
+            &.error {
+                display: inline-block;
+            }
+
+            &.sent {
+                display: inline-block;
+                color: $text-color-white;
+                font-size: $base-font-size + 5px;
+            }
         }
     
     }
@@ -39,7 +61,6 @@
             textarea {
                 height: 100px;
             }
-
 
         }
     }

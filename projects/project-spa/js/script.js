@@ -83,7 +83,7 @@ document.getElementById('appointment-form').addEventListener('submit', function(
         appointmentErrors.appendChild(listError);
     } else {
         appName.classList.remove('error');
-    }
+    } 
 
     if(appEmail.value.trim() === '') {
         appEmail.classList.add('error');

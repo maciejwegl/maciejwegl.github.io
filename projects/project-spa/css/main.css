@@ -879,6 +879,7 @@ select.error {
 }
 #contact .contact-info .contact-item .contact-details {
   text-align: left;
+  min-width: 200px;
 }
 #contact .contact-info .contact-item .contact-details a {
   text-decoration: none;
